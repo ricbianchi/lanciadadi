@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2545" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.4" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Immagini\" />
+    <None Remove="Immagini\1.png" />
+    <None Remove="Immagini\2.png" />
+    <None Remove="Immagini\3.png" />
+    <None Remove="Immagini\4.png" />
+    <None Remove="Immagini\5.png" />
+    <None Remove="Immagini\6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Immagini\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Immagini\1.png" />
+    <EmbeddedResource Include="Immagini\2.png" />
+    <EmbeddedResource Include="Immagini\3.png" />
+    <EmbeddedResource Include="Immagini\4.png" />
+    <EmbeddedResource Include="Immagini\5.png" />
+    <EmbeddedResource Include="Immagini\6.png" />
+  </ItemGroup>
+</Project>
